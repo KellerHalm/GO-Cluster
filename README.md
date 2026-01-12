@@ -37,6 +37,9 @@
 Скомпилируйте все три сервиса. Выполните команды в корне проекта:
 
 ```bash
+go mod init cluster # Инициализация проекта
+go get github.com/google/uuid # Скачиваем библиотеку
+
 # Для Windows (PowerShell/CMD)
 go build -o worker.exe ./worker
 go build -o agent.exe ./agent
